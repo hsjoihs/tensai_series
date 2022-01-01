@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>回路の天才@</title>
+	<script type="text/javascript" src="genelec.files/main.js"></script>
+	<script type="text/javascript" src="genelec.files/save.js"></script>
+	<script type="text/javascript" src="genelec.files/betrow.js"></script>
+</head>
+
+<body onload="init()">
+<a href="genelec.files/readme.htm">説明書はこちら</a>
+<div id="Crc">
+<table cellspacing=0 cellpadding=0 id="crc">
+	<tr>
+		<td>致命的バグがあるか、ブラウザの関係上表示できません。IE8には未対応です。</td>
+	</tr>
+</table>
+</div>
+<form name="frm">
+<input type="button" id="brd" name="brd" onclick="BordOnOff()" value="枠線を消す/つける">
+<div id="one">
+<input type="button" id="rwup" name="rwup" onclick="RowUp()" value="行数(横)を増やす">
+<input type="button" id="rwdn" name="rwdn" onclick="RowDn()" value="行数(横)を減らす">
+<input type="button" id="clup" name="clup" onclick="ColUp()" value="列数(縦)を増やす">
+<input type="button" id="cldn" name="cldn" onclick="ColDn()" value="列数(縦)を減らす">
+</div>
+<div id="two">
+<input type="button" id="thrwup" name="thrwup" onclick="thsRowUp()" value="この行の上に行を足す">
+<input type="button" id="thrwdn" name="thrwdn" onclick="thsRowDn()" value="この行(横)を消す">
+<input type="button" id="thclup" name="thclup" onclick="thsColUp()" value="この列の左に列を足す">
+<input type="button" id="thcldn" name="thcldn" onclick="thsColDn()" value="この列(縦)を消す">
+</div>
+<input type="button" id="inpt" onclick="Imp(document.frm.svng.value,true)" value="入力する">
+<input type="button" id="outpt" name="ot" onclick="document.frm.svng.value=Save(true)" value="出力する">
+<input type="text" name="svng" value="" onclick="this.select(0,this.value.length)">
+</form>
+<p>セルをクリックして、下の画像をクリックすると画像がセルに入ります。</p>
+<p id="sym"></p>
+</body>
+</html>
